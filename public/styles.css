@@ -1,0 +1,568 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  
+  .nav {
+    display: flex;
+    padding: 0px; 
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav .icon {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+
+  .nav h1{
+    font-size: 30px;
+  }   
+  h1:hover {
+    transform: scaleX(1.2); 
+}
+/*----Banner----*/
+
+
+.banner {
+  margin: 20px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.img-banner {
+  max-width: 90%; 
+  height: auto; 
+  border-radius: 20px;
+}
+
+.img-banner:hover {
+  transform: translate(10px, 10px); 
+}
+/*---peliculas----*/
+  .container {
+    padding: 20px;
+  }
+ 
+  .carousel {
+    display: flex;
+    background-image:url(/images/fondo6.jpg) ;
+    background-size: cover;
+    background-position: center;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    gap: 20px; 
+    padding: 50px;
+    white-space: nowrap; /
+  }
+  
+  
+  .carousel-item {
+    flex: 0 0 auto; 
+    scroll-snap-align: center; 
+    position: relative
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 80vh; 
+    object-fit: contain; 
+     
+    transform: translate(-30%, 30px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .carousel-caption {
+    
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    left: 50%;
+    top: 10%; 
+    width: 50%; 
+    border-radius: 20px;
+    max-width: 500px;
+    white-space: pre-line;
+    
+}
+.carousel-caption p {
+  white-space: pre-line;
+  font-size: 1.2rem;
+  margin-top: 20px; 
+  line-height: 1.4; 
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(50%); 
+
+}
+  
+.carousel-caption h3 {
+  font-size: 1.5rem; 
+  margin-bottom: 5px; 
+}
+
+
+  .text {
+    padding: 3px;
+    background-color: rgb(128, 128, 128);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .text h2{
+    font-size: 15px; 
+    font-weight: bold; 
+    text-align: center;
+    color: white;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin-top: 10px;
+    
+  }
+
+
+  .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    
+  }
+
+
+  label{
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #757575;
+    border-radius: 5px;
+  }
+  
+  .btn-form {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn-form:hover {
+    background-color: #0056b3;
+  }
+
+ .footer{
+  background-color: #0f0f0f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top:20px;
+  position:relative;
+  width: 100%;
+ }
+
+
+label {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+/*ADMIN*/
+.custom-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 3.2%;
+}
+.custom-carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.custom-carousel-item {
+  flex: 0 0 50%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.custom-carousel img {
+  width: 85%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.custom-carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  
+}
+
+.custom-carousel-controls button{
+  background-color: #0057b3de;
+  color: #ffffff;
+  border:solid;
+  border-radius: 20px;
+}
+
+.custom-carousel-controls button:hover{
+  background-color: white;
+  border:solid;
+  color:#0057b3d7;
+}
+
+
+.custom-carousel-item h3 {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  width: 75%;
+  background-color: #4a4a4a;
+  color: #ffffff; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center; 
+  border-radius: 5px; 
+}
+
+    
+.btn-group {
+  display: flex;
+  justify-content: center; 
+  gap: 25px;
+  width: 100%; 
+  margin-top: 10px; 
+  
+}
+.btn-edit, .btn-eliminar {
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 9px;
+}
+
+.btn-eliminar:hover{
+  background-color: #f44336d0; 
+}
+  
+.btn-edit:hover{
+  background-color:#0057b3f0;
+  color: white;
+}
+.btn-edit {
+  padding: 8px 20px;
+  background:#007bff;
+  color: white;
+}
+       
+.btn-eliminar {
+  padding: 8px 13px;
+  background-color: #f44336; 
+  color: white;
+}
+
+.btn-save {
+  width: 100%; 
+}
+
+#edit-descripcion {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#edit-form {
+  display: none; 
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 50px;
+  background-image: url("images/fondo7.jpg");
+  border-radius: 10px; 
+  box-shadow: 0 4px 9px rgb(128, 128, 128);
+  font-family: Arial, sans-serif;
+}
+
+#edit-form label {
+  padding: 6px;
+  text-align: center;
+  background-color: #60606099;
+  border-radius: 10px;
+  display: block;
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: #f5f7f5;
+  width: 40%;
+}
+
+#edit-form input,
+#edit-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#edit-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-save {
+  justify-content: center;
+  margin-left: 25%;
+  display: flex;
+  width: 50%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-save:hover {
+  background: #0057b3e0;
+}
+
+/*Agregar pelicula*/
+h4{
+  padding: 30px;
+  background-color: #0f0f0f;
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-agregar-pelicula {
+  background-image: url("images/fondo7.jpg");
+  border: solid 1px;
+  border-color: red;
+   padding: 50px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-agregar-pelicula label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #c1bfbf;
+}
+
+.input-agregar, .textarea-agregar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.textarea-agregar {
+  resize: vertical;
+  height: 80px;
+}
+
+.btn-agregar-pelicula {
+  justify-content: center;
+  margin-left: 25%;
+  display: flex;
+  width: 50%;
+  padding: 10px;
+  margin-top: 15px;
+  background:#007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+}
+
+.btn-agregar-pelicula:hover {
+  background-color: #0056b3;
+}
+
+.form-agregar-container {
+  display: none;
+}
+
+
+.btn-toggle-form {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-toggle-form:hover {
+  background-color: #0056b3;
+}
+
+
+ .file-upload {
+    display: none; 
+  }
+
+  .custom-file-label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .custom-file-label:hover {
+    background-color: #0056b3;
+  }
+
+  #file-name {
+    margin-left: 10px;
+    font-size: 14px;
+    color: white; 
+    background-color: #33333300; 
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 10px;
+    
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+    color: white;
+  }
+  /*responsive*/
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column; 
+      text-align: center;
+    }
+    .nav h1 {
+      font-size: 24px;
+    }
+
+    .banner {
+      margin: 10px;
+    }
+    .img-banner {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .carousel-item img{
+      max-height: 380px;
+    }
+    .carousel-caption {
+      width: 50%;
+      max-width: 90%;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      margin-top: 10px;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    .carousel-caption p {
+      font-size: 12px;
+      line-height: 1.2;
+      margin-top: -15px;
+    }
+  
+    .formulario, .form-agregar-pelicula {
+      width: 70%;
+      padding: 20px;
+    }
+    .btn-form, .btn-agregar-pelicula {
+      width: 50%;
+    }
+    /*Admin agregar peliculas*/
+    .custom-carousel-item img {
+     
+      width: 100%;
+      margin-top: 5%;
+  }
+    .btn-group {
+      flex-direction: column;
+      gap: 5px;
+      
+  }
+  .custom-carousel-controls{
+    margin-top: -10%;
+   
+  }
+    .footer {
+      font-size: 14px;
+      padding: 10px;
+  }
+  }
